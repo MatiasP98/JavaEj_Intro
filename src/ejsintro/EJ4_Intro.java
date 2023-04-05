@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author Matias
  */
-public class Ej2_Intro {
+public class EJ4_Intro {
 
     /**
      * @param args the command line arguments
@@ -17,9 +17,11 @@ public class Ej2_Intro {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingresá a continuación tu nombre:");
-        String  name=leer.nextLine();
-        System.out.println("El nombre ingresado fue :"+ name );
+        System.out.println("Ingrese a continuación la temperatura en grados celsius: ");
+        double tC= leer.nextDouble();
+        double tF=(tC*1.8)+32;
+        System.out.println("La temperatura en grados Fahrenheit es :"+ tC);
+        
     }
     
 }

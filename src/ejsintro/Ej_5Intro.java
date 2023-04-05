@@ -9,17 +9,20 @@ import java.util.Scanner;
  *
  * @author Matias
  */
-public class Ej2_Intro {
+public class Ej_5Intro {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+     Scanner leer= new Scanner(System.in);
         // TODO code application logic here
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingresá a continuación tu nombre:");
-        String  name=leer.nextLine();
-        System.out.println("El nombre ingresado fue :"+ name );
-    }
+     System.out.println("Ingrese a continuación un número:");
+     int num=leer.nextInt();
+     
+      System.out.println("El doble del número ingresado es: " + (num*2));
+      System.out.println("El doble del número ingresado es: " + (num*3));
+      System.out.println("El doble del número ingresado es: " + (Math.sqrt(num)));    }
+    
     
 }
